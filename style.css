@@ -1,0 +1,188 @@
+.outfit {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+
+*{
+    background-color: white;
+    text-decoration: none;
+    font-family: "outfit", sans-serif;
+}
+
+.navbar{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+.navdiv{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    font-size: 25px;
+    font-weight: 600;
+    color:#333;
+}
+li{
+    list-style: none;
+    display:inline-block;
+}
+li a{
+    color:#333;
+    font-size: 18px;
+    font-weight: regular;
+    margin-right: 50px;
+}
+button {
+    border:0;
+    outline:0;
+    background:linear-gradient(135deg, #ff8c00, #ff0080);
+    border-radius: 40px;
+    width:200px;
+    height:50px;
+    cursor: pointer;
+    color:white;
+    font-size: 16px;
+}
+.image img{
+    border-radius: 50%;
+    height:200px;
+    width:200px;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+}
+.gradient-text {
+    background: linear-gradient(135deg, #fdd354, #ff0d86);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.introduction{
+    text-align: center;
+    width: 700px;
+}
+h1{
+    font-size: 40px;
+}
+.buttons{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+.transparent{
+   border:2px solid #333;
+   background:white;
+   color:#333;
+   
+  
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 20px 10%;
+
+}
+about-me{
+    display: flex;
+    flex-direction: column;
+}
+.content-about-me{
+    display: flex;
+    gap: 30px;
+}
+.content-about-me img{
+    width:400px;
+    height:400px;
+    border-radius: 20px;
+}
+.about-skills{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.about-skill hr {
+    outline: none;
+    border: none;
+    width: 50%;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+}
+.work {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1px;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .grid-container img{
+    width:300px;
+  }
+  .contact{
+    display:flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  .contact-left{
+    display:flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width:500px;
+    margin-right: 25px;
+  }
+
+  .contact-right{
+    display:flex;
+    flex-direction: column;
+    width: 500px;
+    margin-left: 25px;
+  }
+  input{
+    height: 40px;
+    width:450px;
+    border-radius: 5px;
+    border: 0.2px solid
+  }
+  label{
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+  }
+ textarea{
+    width:450px;
+    border-radius: 5px;
+ }
+ form button{
+    margin-top: 20px;
+ }
