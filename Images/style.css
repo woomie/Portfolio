@@ -11,11 +11,9 @@
     font-family: "outfit", sans-serif;
 
 }
-header{
-    padding-top: 40px;
-}
 .navbar{
-    padding: 100px;
+    padding-right: 100px;
+    padding-left: 100px;
 }
 .navdiv{
     display:flex;
@@ -55,38 +53,24 @@ button {
     align-items: center;
     justify-content: center;
     margin: 100px;
-    padding:150px;
+    padding:100px;
 }
 .hero img{
-    height:356px;
-    width: 350px;
-    border-radius: 50%;
+   border-radius: 50%;
     
 }
 .hero p{
     font-size: 30px;
     font-weight: bold;
     padding:40px;
-    text-align: left;
+    text-align: center;
 }
 .hero span{
     color:#ff0080;
 }
-.hero-section{
-    display:flex;
-    flex-direction: column;
-}
 .hero-button{
     display:flex;
-    align-items: center;
-    gap: 30px;
-    font-weight: 500;
-    margin-left:40px;
-}
-.transparent{
-    border:2px solid #333;
-    background:white;
-    color:#333;
+    
 }
 .my-work{
     display: flex;
@@ -94,61 +78,16 @@ button {
     align-items: center;
     margin-top: 100px;
 }
-
+.my-work img{
+    width:576px;
+    height: 432px;
+}
 .my-work h1{
-    padding-bottom: 50px;
-}
-.latest-work {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: center;
-    padding: 20px; 
-}
-
-.card {
-    flex: 1 1 calc(25% - 20px); 
-    box-sizing: border-box; 
-    max-width: 311px; 
-    text-align: center;
-}
-
-.card img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners for images */
-}
-
-.card-body {
-    padding: 15px;
-}
-.card button{
-    margin-top: 20px;
-}
-.card button:hover{
-    background:linear-gradient(135deg, #ff8c00, #ff0080);
-    border: none;
-    color:White;
+    padding-bottom: 30px;
 }
 .connect-with-me{
     display:flex;
     flex-direction:column;
-    margin-top: 200px;
-    text-align: left;
     align-items: center;
-}
-.connect-with-me h1{
-    margin-bottom: 50px;
-}
-.contact{
-    margin-top:30px; 
-    display: flex;  
-}
-
-form .form-control {
-    border-radius: 8px;
-    
-}
-footer{
-    margin-top: 50px;
+    margin-top: 100px;
 }
