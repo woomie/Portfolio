@@ -152,3 +152,12 @@ form .form-control {
 footer{
     margin-top: 50px;
 }
+.about-me{
+    display: flex;
+}
+.about-me img{
+    height:356px;
+    width: 350px;
+       
+           
+}
