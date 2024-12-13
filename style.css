@@ -9,31 +9,17 @@
 *{
     text-decoration: none;
     font-family: "outfit", sans-serif;
+    background-color: white;
 
 }
-header{
-    padding-top: 40px;
-}
-.navbar{
-    padding: 100px;
-}
-.navdiv{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
+header span{
     font-size: 25px;
     font-weight: 600;
     color:#333;
     text-decoration: none;
 }
-li{
-    list-style:none;
-    display:inline-block;
-}
 li a{
-    color:#333;
+    color:#333 !important;
     font-size: 18px;
     font-weight: regular;
     margin-right: 50px;
@@ -50,43 +36,30 @@ button {
     font-size: 16px;
 }
 .hero{
-    /*background: radial-gradient(circle at bottom, #ff8c00, rgb(252, 252, 244), #fff);*/
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 100px;
-    padding:150px;
-}
-.hero img{
-    height:356px;
-    width: 350px;
-    border-radius: 50%;
-    
-}
-.hero p{
-    font-size: 30px;
-    font-weight: bold;
-    padding:40px;
-    text-align: left;
+    margin: 70px;
+    padding:70px;
 }
 .hero span{
     color:#ff0080;
-}
-.hero-section{
-    display:flex;
-    flex-direction: column;
-}
-.hero-button{
-    display:flex;
-    align-items: center;
-    gap: 30px;
-    font-weight: 500;
-    margin-left:40px;
 }
 .transparent{
     border:2px solid #333;
     background:white;
     color:#333;
+}
+.transparent:hover{
+    background:black;
+    border: none;
+    color:White;
+}
+.p-2 a{
+    color:#333 !important;
+    font-size: 18px;
+    font-weight: regular;
+    margin-right: 50px;
 }
 .my-work{
     display: flex;
@@ -133,7 +106,8 @@ button {
 .connect-with-me{
     display:flex;
     flex-direction:column;
-    margin-top: 200px;
+    margin-top: 100px;
+    padding: 50px;
     text-align: left;
     align-items: center;
 }
@@ -148,16 +122,4 @@ button {
 form .form-control {
     border-radius: 8px;
     
-}
-footer{
-    margin-top: 50px;
-}
-.about-me{
-    display: flex;
-}
-.about-me img{
-    height:356px;
-    width: 350px;
-       
-           
 }
