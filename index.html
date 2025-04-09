@@ -35,9 +35,13 @@
             <div class="col-lg-6">
                 <p class="fs-3 fw-bold fs-md-5 fs-sm-5"> I'm <span>Wunmi</span>. I will turn your ideas into impactful designs and functional solutions. </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="#"><button type="button" class="px-4 me-md-2" fdprocessedid="lsdevz">Let's Talk</button></a>
+                <button onclick="toggleContact()" type="button" class="px-4 me-md-2" fdprocessedid="lsdevz">Let's Talk</button>
                 <a href="./PDF/User experience CV.docx (2).pdf"><button type="button" class="px-4 transparent" fdprocessedid="pxp6pu">My Resume</button></a>
                 
+              </div>
+              <div id="contact-info" class="hidden">
+                <p>Email: <a href="mailto:youremail@example.com">wunmilawal24@gmail.com</a></p>
+                <p>Phone: <a href="tel:+11234567890">587-834-1810</a></p>
               </div>
             </div>
           </div>
@@ -49,7 +53,7 @@
                 <img src="./Images/Real-Estate-App.png" alt="picture of a website with data">
                 <div class="card-body">
                     <h5 class="card-title">InvestSmart</h5>
-                    <p class="card-text">Real Estate Investment App</p>
+                    <p class="card-text">Built with React and Firestore</p>
                     <a href="https://github.com/nageeb-damani/real-estate-evaluator-portal.git"><button class="transparent">View</button></a> 
                 </div>
             </div>
@@ -62,18 +66,18 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./Images/Adventure Travel.png" alt="picture of a website with a boat">
+                <img src="./Images/Signup.png" alt="picture of a website with a sign up page">
                 <div class="card-body">
-                    <h5 class="card-title">Tindog</h5>
-                    <p class="card-text">Tinder for Dogs.</p>
-                    <a href="https://woomie.github.io/TinDog/"><button class="transparent">View</button></a>
+                    <h5 class="card-title">Firebase Auth</h5>
+                    <p class="card-text">Using HTTP requests and Promises</p>
+                    <a href="https://woomie.github.io/signUp/"><button class="transparent">View</button></a>
                 </div>
             </div>
             <div class="card">
                 <img src="./Images/The Guide.png" alt="picture of a website with a boat">
                 <div class="card-body">
                     <h5 class="card-title">The Guide</h5>
-                    <p class="card-text">Things to do in Calgary.</p>
+                    <p class="card-text">Designed in Figma</p>
                     <a href="https://www.figma.com/proto/kVlDlgeqgxS7XZBwRAFI5g/The-Guide-WIT?node-id=102-922&starting-point-node-id=102%3A922"><button class="transparent">View</button></a>
                 </div>
             </div>
@@ -141,5 +145,12 @@
        
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script>
+        function toggleContact() {
+          const info = document.getElementById("contact-info");
+          info.classList.toggle("hidden");
+        }
+      </script>
+      
 </body>
 </html>
