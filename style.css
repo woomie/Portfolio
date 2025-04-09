@@ -123,15 +123,5 @@ form .form-control {
     border-radius: 8px;
     
 }
-.hidden {
-    display: none;
-    margin-top: 10px;
-  }
-  
-  #contact-info {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
+
   
