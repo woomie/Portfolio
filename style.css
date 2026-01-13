@@ -6,11 +6,22 @@
   }
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     text-decoration: none;
     font-family: "outfit", sans-serif;
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
 }
 header span{
     font-size: 25px;
@@ -21,8 +32,13 @@ header span{
 li a{
     color:#333 !important;
     font-size: 18px;
-    font-weight: regular;
+    font-weight: 500;
     margin-right: 50px;
+    transition: color 0.3s ease;
+}
+
+li a:hover {
+    color: #ff0080 !important;
 }
 button {
     border:0;
@@ -34,74 +50,182 @@ button {
     cursor: pointer;
     color:white;
     font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 128, 0.2);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 0, 128, 0.3);
 }
 .hero{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 70px;
-    padding:70px;
+    margin: 20px 70px 70px 70px;
+    padding:40px 70px 70px 70px;
 }
 .hero span{
     color:#ff0080;
 }
 .transparent{
     border:2px solid #333;
-    background:white;
+    background:transparent;
     color:#333;
+    box-shadow: none;
 }
+
 .transparent:hover{
-    background:black;
-    border: none;
-    color:White;
+    background:linear-gradient(135deg, #333, #555);
+    border: 2px solid #333;
+    color:white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.2);
 }
 .p-2 a{
     color:#333 !important;
     font-size: 18px;
-    font-weight: regular;
+    font-weight: 500;
     margin-right: 50px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.p-2 a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff0080;
+    transition: width 0.3s ease;
+}
+
+.p-2 a:hover {
+    color: #ff0080 !important;
+}
+
+.p-2 a:hover::after {
+    width: 100%;
 }
 .my-work{
     display: flex;
     flex-direction:column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 20px;
+    padding: 0 20px;
 }
 
 .my-work h1{
     padding-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.my-work h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #ff8c00, #ff0080);
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 .latest-work {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; 
+    gap: 30px; 
     justify-content: center;
-    padding: 20px; 
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .card {
-    flex: 1 1 calc(25% - 20px); 
+    flex: 1 1 calc(33.333% - 30px); 
     box-sizing: border-box; 
-    max-width: 311px; 
+    min-width: 320px;
+    max-width: 380px; 
     text-align: center;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
     width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 8px; /* Optional: Rounded corners for images */
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.05);
 }
 
 .card-body {
-    padding: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
 }
 .card button{
-    margin-top: 20px;
+    margin-top: 15px;
+    align-self: center;
 }
 .card button:hover{
     background:linear-gradient(135deg, #ff8c00, #ff0080);
     border: none;
     color:White;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.tech-tag {
+    background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: #555;
+    font-weight: 500;
+    border: 1px solid #ddd;
+}
+
+.card-description {
+    color: #777;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    margin: 8px 0;
 }
 .connect-with-me{
     display:flex;
@@ -113,6 +237,19 @@ button {
 }
 .connect-with-me h1{
     margin-bottom: 50px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.connect-with-me h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(135deg, #ff8c00, #ff0080);
+    margin: 15px auto 0;
+    border-radius: 2px;
 }
 .contact{
     margin-top:30px; 
@@ -121,7 +258,164 @@ button {
 
 form .form-control {
     border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 12px 15px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    border-color: #ff0080;
+    box-shadow: 0 0 0 3px rgba(255, 0, 128, 0.1);
+    outline: none;
+}
+
+form .form-label {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Responsive Media Queries */
+
+/* Tablet devices (768px and below) */
+@media screen and (max-width: 768px) {
+    .hero {
+        margin: 30px 20px;
+        padding: 30px 20px;
+    }
     
+    .hero .fs-3 {
+        font-size: 1.5rem !important;
+    }
+    
+    li a {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+    
+    button {
+        width: 160px;
+        height: 45px;
+        font-size: 14px;
+    }
+    
+    .card {
+        flex: 1 1 calc(50% - 20px);
+        max-width: 100%;
+    }
+    
+    .connect-with-me {
+        padding: 30px 20px;
+    }
+    
+    .contact .col-4 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+/* Mobile devices (576px and below) */
+@media screen and (max-width: 576px) {
+    header span {
+        font-size: 20px;
+    }
+    
+    li a {
+        margin-right: 10px;
+        font-size: 14px;
+    }
+    
+    .hero {
+        margin: 20px 10px;
+        padding: 20px 10px;
+    }
+    
+    .hero .fs-3 {
+        font-size: 1.2rem !important;
+        text-align: center;
+    }
+    
+    button {
+        width: 140px;
+        height: 40px;
+        font-size: 13px;
+    }
+    
+    .my-work {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+    
+    .my-work h1 {
+        font-size: 1.8rem;
+        padding-bottom: 30px;
+    }
+    
+    .latest-work {
+        padding: 10px;
+    }
+    
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .connect-with-me {
+        margin-top: 50px;
+        padding: 20px 15px;
+    }
+    
+    .connect-with-me h1 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+    
+    .contact .row {
+        flex-direction: column;
+    }
+    
+    .contact .col-4,
+    .contact .col-8 {
+        width: 100%;
+        padding: 10px !important;
+    }
+    
+    .contact .col-4 h1 {
+        font-size: 1.5rem;
+    }
+    
+    .p-2 a {
+        margin-right: 20px;
+        font-size: 16px;
+    }
+}
+
+/* Extra small devices (400px and below) */
+@media screen and (max-width: 400px) {
+    header span {
+        font-size: 18px;
+    }
+    
+    .nav-pills {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+    
+    li a {
+        margin-right: 5px;
+        font-size: 12px;
+    }
+    
+    button {
+        width: 120px;
+        height: 38px;
+        font-size: 12px;
+    }
+    
+    .hero .fs-3 {
+        font-size: 1rem !important;
+    }
 }
 
   

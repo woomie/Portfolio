@@ -36,7 +36,7 @@
                 <p class="fs-3 fw-bold fs-md-5 fs-sm-5"> I'm <span>Wunmi</span>. I will turn your ideas into impactful designs and functional solutions. </p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                 <a href="#connect-with-me"><button type="button" class="px-4 me-md-2" fdprocessedid="lsdevz">Let's Talk</button></a>
-                <a href="./PDF/User experience CV.docx (2).pdf"><button type="button" class="px-4 transparent" fdprocessedid="pxp6pu">My Resume</button></a>
+                <a href="./PDF/Child Friendly Resume.pdf"><button type="button" class="px-4 transparent" fdprocessedid="pxp6pu">My Resume</button></a>
                 
               </div>
               
@@ -50,15 +50,47 @@
                 <img src="./Images/Real-Estate-App.png" alt="picture of a website with data">
                 <div class="card-body">
                     <h5 class="card-title">InvestSmart</h5>
-                    <p class="card-text">Built with React and Firestore</p>
-                    <a href="https://github.com/nageeb-damani/real-estate-evaluator-portal.git"><button class="transparent">View</button></a> 
+                    <p class="card-description">Real estate investment calculator for property analysis and ROI forecasting</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">Firebase Auth</span>
+                        <span class="tech-tag">Visualisation</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    <a href="https://realestatecalculator-1.onrender.com/calculator"><button class="transparent">View</button></a> 
+                </div>
+            </div>
+            <div class="card">
+                <img src="./Images/MovieVerse.png" alt="picture of a website with a movie poster">
+                <div class="card-body">
+                    <h5 class="card-title">Movie Verse</h5>
+                    <p class="card-description">Movie discovery app with search, filter, and user authentication features</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">Firebase Auth</span>
+                        <span class="tech-tag">Responsive Design</span>
+                    </div>
+                    
+                    <a href="https://movieverse-1-vywl.onrender.com/"><button class="transparent">View</button></a>
                 </div>
             </div>
             <div class="card">
                 <img src="./Images/To-Do-App.png" alt="picture of a website with a todolist">
                 <div class="card-body">
                     <h5 class="card-title">To-Do List</h5>
-                    <p class="card-text">Built with React, Node and Express</p>
+                    <p class="card-description">Full-stack task management app with CRUD operations and persistent storage</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">Git</span>
+                    </div>
                     <a href="https://todo-frontend-icnh.onrender.com/"><button class="transparent">View</button></a>
                 </div>
             </div>
@@ -66,7 +98,15 @@
                 <img src="./Images/Signup.png" alt="picture of a website with a sign up page">
                 <div class="card-body">
                     <h5 class="card-title">Firebase Auth</h5>
-                    <p class="card-text">Using HTTP requests and Promises</p>
+                    <p class="card-description">Secure authentication system with user registration and login functionality</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">REST API</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">Async/Await</span>
+                    </div>
                     <a href="https://woomie.github.io/signUp/"><button class="transparent">View</button></a>
                 </div>
             </div>
@@ -74,10 +114,18 @@
                 <img src="./Images/The Guide.png" alt="picture of a website with a boat">
                 <div class="card-body">
                     <h5 class="card-title">The Guide</h5>
-                    <p class="card-text">Designed in Figma</p>
+                    <p class="card-description">Interactive travel app design with modern UI/UX principles and user flows</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Figma</span>
+                        <span class="tech-tag">UI/UX Design</span>
+                        <span class="tech-tag">Prototyping</span>
+                        <span class="tech-tag">Wireframing</span>
+                        <span class="tech-tag">User Research</span>
+                    </div>
                     <a href="https://www.figma.com/proto/kVlDlgeqgxS7XZBwRAFI5g/The-Guide-WIT?node-id=102-922&starting-point-node-id=102%3A922"><button class="transparent">View</button></a>
                 </div>
             </div>
+            
         </div>
     </section>
     <section class = "about-me" id="about-me">
@@ -136,13 +184,15 @@
           <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
           </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Olawunmi Lawal.</span>
+          <span class="mb-3 mb-md-0 text-body-secondary">© <span id="year"></span> Olawunmi Lawal.</span>
         </div>
     
        
       </footer>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      
+      <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
       
 </body>
 </html>
